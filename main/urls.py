@@ -6,6 +6,6 @@ from lista.views import todo_list, home
 urlpatterns = [
   
     path('admin/', admin.site.urls),
-    path('cadastro/',todo_list),
+    path('cadastro/',todo_list, name="cadastro"),
     path('', home)
 ]

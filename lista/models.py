@@ -6,4 +6,4 @@ class Todo(models.Model):
     deadline = models.DateTimeField(null = False, blank = False)
     finished_at = models.DateTimeField(null = True)
     
-    
+
