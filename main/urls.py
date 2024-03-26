@@ -6,5 +6,5 @@ from lista.views import todo_list
 urlpatterns = [
   
     path('admin/', admin.site.urls),
-    path('',todo_list )
+    path('cadastro/',todo_list )
 ]
