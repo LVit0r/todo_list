@@ -7,3 +7,7 @@ def todo_list(request):
         nome = request.POST.get('nome', None)
         pessoas.append(nome) 
     return render(request, "lista/todo_list.html", {'pessoas': pessoas})
+
+
+def home(request):
+    return render(request, "lista/home.html")
