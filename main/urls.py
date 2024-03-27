@@ -1,11 +1,11 @@
 
 from django.contrib import admin
-from django.urls import path
-from lista.views import todo_list, home
+from django.urls import path,include
+from lista.views import home
 
 urlpatterns = [
   
     path('admin/', admin.site.urls),
-    path('cadastro/',todo_list, name="cadastro"),
+    path('cadastro/',include('lista.urls')),
     path('', home)
 ]
