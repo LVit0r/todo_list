@@ -1,0 +1,17 @@
+<h1>LISTA DE TAREFAS</h1>
+
+
+<form action="{% url 'cadastrotarefas'%}" method="post">
+    {% csrf_token %}
+    <label for="nome">Nome:</label>
+    <br>
+    <input type="text", id="nome", name="nome">
+    <br>
+    <input type="submit", value="Enviar">
+</form>
+
+<ul>
+    {% for todo in todos %}
+        <li>{{ todo.tarefa }}</li>
+    {% endfor %}
+</ul>
